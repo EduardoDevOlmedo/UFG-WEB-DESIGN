@@ -12,27 +12,29 @@
 label{
  display:flex;
   flex-direction:column;
-  width:76px;
+  width:56px;
   cursor:pointer;
   padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 7px;
 }
 
 label span{
   background: rgb(0, 0, 0);
   border-radius:10px;
   height:7px;
-  margin: 7px 0;
+  margin: 7px 0; 
   transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 
 span:nth-of-type(1){
-  width:46%;
+  width:55%;
   
 }
 
 span:nth-of-type(2){
-  width:80%;
+  width:109%;
 }
 
 
@@ -65,7 +67,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
 
 input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
-    width: 47%;
+    width: 49%;
     transform: translate(28px,-15px) rotatez(45deg);
     background-color: rgb(141, 92, 92);
 }
@@ -154,6 +156,8 @@ header{
 }
 
 .section1-nav{
+  display: flex;
+  align-items: center;
   width: 50%; background-color: rgb(207, 203, 211);
 }
 
@@ -169,19 +173,20 @@ header{
 .flag{
   display: inline-block;
   background-image: url('../iconos/bandera.svg');
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 51px;
   background-position: center;
   background-size: cover;
-  padding: 10px;
-  border-right: 2px solid black;
+  padding: 26px;
+  border-left: 2px solid black;
 }
 
 .logo-main{
   display: inline-block;
   background-image: url('../Imagenes/logotipo.svg');
-  width: 50px;
-  height: 50px;
+  width: 71px;
+  height: 53px;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,8 +195,18 @@ header{
 }
 
 nav{
-  transform: translateY(-22%);
+  transform: translateY(-25%);
   width: 100%;
   height: 40px;
-  background-color: rebeccapurple;
+  background-color: rgb(236, 236, 245);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+ border-left: 1px solid black;
 }
