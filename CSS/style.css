@@ -1,11 +1,20 @@
+
+
 /* Sergio */
+/* Diseños animacioón */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 
 label{
  display:flex;
   flex-direction:column;
-  width:70px;
+  width:76px;
   cursor:pointer;
+  padding: 5px;
 }
 
 label span{
@@ -14,7 +23,6 @@ label span{
   height:7px;
   margin: 7px 0;
   transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-
 }
 
 
@@ -51,50 +59,56 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
   transform-origin:top;
   transform:rotatez(-45deg);
   background-color: rgb(141, 92, 92);
+  
 }
 
 
 input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
-  width:50%;
-  transform: translate(30px,-11px) rotatez(45deg);
-  background-color: rgb(141, 92, 92);
+    width: 47%;
+    transform: translate(28px,-15px) rotatez(45deg);
+    background-color: rgb(141, 92, 92);
 }
 /* 
 Maquetación del boton en su primera fase */
 
+a{
+  text-decoration: none;
+}
+
 ul{
   font-size: 1rem;
-  color: bisque;
+  color: rgb(68, 44, 15);
   padding: 0;
 }
 
-li{
+ li{
   display: block;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   list-style: none;
   margin: 10px 0 10px;   
+  font-family: 1.2rem;
+  width: 100%;
+  text-align: center;
+  align-self: center;
 }
 
-li:hover{
-  color: rgb(155, 155, 199);
-  transition: 0.3s ease-out;
-}
 
 #menu{
   position: absolute;    
-  top: -10px;    
-  left: 101px;    
+  top: 80px;    
+  left: 10px;    
   z-index: 50;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(190, 183, 183);
   min-width: 50px;
   max-width: 320px;
   padding: 10px;
 }
 
 #menu:hover{
-  background-color: rgb(73, 77, 83);
+  background-color: rgb(210, 213, 218);
   transition: 0.2s ease-in-out;
+  box-shadow: 1px 1px 1px 1px 1px rgba(8, 56, 128);
 }
 
 .menuOff     
@@ -105,10 +119,79 @@ li:hover{
 .menuOn    
 {     
     width: 180px;
-    height: auto;
+    height: 60px;
     justify-content: space-evenly;
     display: flex;   
     border-radius: 20px; 
 }
 
+.a_link-menu{ 
+  color: rgb(98, 109, 109);
+}
+
+
+
+
 /* Eduardo */
+
+header{
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  max-width: 100%;
+  background: hsl(300, 10%, 27%);
+  display: flex;
+}
+
+.nav-container{
+  display: flex;
+  width: 100%;
+}
+
+.logo_icon1{
+  width: 50%;
+  background-color: red;
+}
+
+.section1-nav{
+  width: 50%; background-color: rgb(207, 203, 211);
+}
+
+.section2-nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  background-color: rgb(207, 203, 211);
+}
+
+.flag{
+  display: inline-block;
+  background-image: url('../iconos/bandera.svg');
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  border-right: 2px solid black;
+}
+
+.logo-main{
+  display: inline-block;
+  background-image: url('../Imagenes/logotipo.svg');
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav{
+  transform: translateY(-22%);
+  width: 100%;
+  height: 40px;
+  background-color: rebeccapurple;
+}
