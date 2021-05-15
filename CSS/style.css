@@ -28,17 +28,17 @@ label span{
 }
 
 
-span:nth-of-type(1){
+label span:nth-of-type(1){
   width:55%;
   
 }
 
-span:nth-of-type(2){
+label span:nth-of-type(2){
   width:109%;
 }
 
 
-span:nth-of-type(3){
+label span:nth-of-type(3){
   width:60%;
  
 }
@@ -186,7 +186,6 @@ header{
   background-image: url('../Imagenes/logotipo.svg');
   width: 71px;
   height: 53px;
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,4 +208,34 @@ nav ul{
 
 nav ul li{
  border-left: 1px solid black;
+}
+
+nav .icon{
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5px;
+}
+
+.plane{
+  background-image: url('../iconos/avion.svg');
+}
+
+.bed{
+  background-image: url('../iconos/cama-de-matrimonio.svg');
+}
+
+.ticket{
+  background-image: url('../iconos/entradas.svg');
+}
+
+.beach{
+  background-image: url('../iconos/sombrilla.svg');
+}
+
+.forkpoon{
+  background-image: url('../iconos/restaurante.svg');
 }
