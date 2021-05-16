@@ -8,6 +8,9 @@
   margin: 0;
 }
 
+body{
+  background: #f8f8f8;
+}
 
 label{
  display:flex;
@@ -190,16 +193,16 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 nav{
-  transform: translateY(-25%);
   width: 100%;
   height: 40px;
   background-color: rgb(236, 236, 245);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  min-width: 320px;
 }
 
 nav ul{
@@ -238,4 +241,67 @@ nav .icon{
 
 .forkpoon{
   background-image: url('../iconos/restaurante.svg');
+}
+
+/* SECCIÓN RECOMENDADOS */
+
+  .recommended {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  padding: 10px; 
+}
+
+h1{
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2{
+  background: rgb(128, 114, 114);
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.recommended{
+  background: red;
+}
+
+.recommended1{
+  background: rgb(161, 158, 158);
+  border-radius: 10%;
+  padding: 10px;
+}
+
+
+.recommended1-img img{
+  width: 90%;
+  border-radius: 7px;
+  padding: 10px;
+  transition: transform .2s; 
+}
+
+.recommended1-img img:hover{
+  transform: scale(1.1);
+}
+
+
+.container-recommend1{
+  display: flex; 
+  align-items: center; 
+  align-content: center;
+}
+
+.content-text{
+  text-align: justify; 
+  padding: 5px; 
+  font-size: 0.9rem;
 }
