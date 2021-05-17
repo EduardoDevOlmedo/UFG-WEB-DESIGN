@@ -9,6 +9,7 @@
 }
 
 body{
+  font-family: 'Quicksand', sans-serif;
   background: #f8f8f8;
 }
 
@@ -260,6 +261,7 @@ h1{
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  font-family: 'Lobster', cursive;
 }
 
 h2{
@@ -269,16 +271,23 @@ h2{
   margin-top: 5px;
   padding: 10px;
   border-radius: 10px;
+  font-family: 'Lobster', cursive;
 }
 
 .recommended{
-  background: red;
+  background: rgb(187, 180, 180);
+  min-width: 320px;
 }
 
 .recommended1{
   background: rgb(161, 158, 158);
   border-radius: 10%;
   padding: 10px;
+  position: relative;
+
+  height: 250px;
+  min-height: 240px;
+  max-height: 400px;
 }
 
 
@@ -304,4 +313,69 @@ h2{
   text-align: justify; 
   padding: 5px; 
   font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+
+
+.red:hover{
+  transform: translateY(100%); 
+  background-color: aquamarine;
+  border-top: none;
+}
+
+
+.red, .green {
+  position: absolute;
+  width: 100px;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  height: 40px;
+  border: 2.5px solid black;
+  color: rgb(173, 44, 167);
+}
+
+.red {
+  z-index: 1;
+  top: 90%;
+  background: rgb(100, 37, 37);
+  transition: transform 1s cubic-bezier(1, 0.31, 0.37, 1.09);
+  left: calc(50% - 40px);
+  
+}
+
+.green {
+  top: 90%;
+  left: calc(50% - 40px);
+  background: rgb(195, 228, 195);
+}
+
+
+.japan{
+  display: inline-block;
+  background-image: url('../iconos/oriental.svg');
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.go-action{
+  display: inline-block;
+  background-image: url('../iconos/next.svg');
+  width: 19px;
+  height: 19px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.green p{
+  display: inline-block;
+
 }
