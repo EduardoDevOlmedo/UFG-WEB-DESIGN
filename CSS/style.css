@@ -87,6 +87,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     transform: translate(28px,-15px) rotatez(45deg);
     background-color: rgb(141, 92, 92);
 }
+
+
 /* 
 Maquetación del boton en su primera fase */
 
@@ -479,17 +481,18 @@ h2{
   color: blue;
 }
 
-.about div{
-  /* background-color: blueviolet;
-  width: 70px;
-  text-align: center;
-  height: 10px; */
-}
 
-.about div p{
-  /* color: black;
-  /* font-size: 1rem = 10px; */
-  /* font-size: 0.8rem;
-  font-weight: bold;
-  padding: 10px; */ */
-}
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTER */
+
+
