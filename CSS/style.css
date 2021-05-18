@@ -435,8 +435,6 @@ h2{
   text-align: center;
   height: 60px;
   font-size: 1.2rem;
-  -webkit-animation: clock 5s ease infinite;
-  -moz-animation: clock 5s ease infinite;
 }
 
 
