@@ -50,7 +50,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 10px;
-  gap: 30px;
+  gap: 17px;
 }
 
 .separation > input{
@@ -61,7 +61,6 @@ body{
 .form-icon{
   display: inline-block;
   background-image: url('../iconos/edit.svg');
-  width: 49px;
   height: 30px;
   vertical-align: bottom;
   background-repeat: no-repeat;
@@ -79,7 +78,7 @@ input{
   border: 0.3px solid black;
 }
 
-@media only screen and (min-width: 300px){
+@media only screen and (min-width: 320px){
   .form-icon{
     width: 30px;
   }
@@ -90,6 +89,16 @@ input{
   width: 104%;
 }
 
+input {
+  transition: 0.3s cubic-bezier(0.39, 0.58, 1, 1.59);
+}
+
+input:focus {
+  padding: 8px;
+  box-shadow: 1px 2px 3px 1px rgba(#272727)
+}
+
+
 .submit{
   box-shadow: none;
   border: none;
@@ -97,9 +106,18 @@ input{
   color: white;
   font-size: 1.6rem;
   border: 1px solid black;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.89, 0.01, 0.76, 1.35);
   background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
 }
 
+.submit:hover{
+  box-shadow: 5px 5px 0px 0px #bcc5ca, 10px 10px 0px 0px #bcc5ca, 15px 15px 0px 0px #A1D8FF, 10px 10px 0px 0px #CAE6FF, 15px 15px 0px 0px #E1EEFF, 1px -2px 16px 6px rgba(15,15,15,0);
+}
+
+:required{
+  font-family: 'Quicksand', sans-serif;
+}
 
 @media only screen and (min-width: 1024px) {
   html{

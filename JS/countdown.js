@@ -16,8 +16,7 @@ const getRemainingTime = deadline => {
 }
 
 const countdown = (deadline, elem, finalMessage) => {
-  const el = document.getElementById(elem);
-  
+  const el = document.getElementById(elem); 
   const timerUpdate = setInterval( () => {
   let t = getRemainingTime(deadline);
   el.innerHTML = `${t.remainDays}D:${t.remainHour}H:${t.remainMinutes}M:${t.remainSeconds}s`;
