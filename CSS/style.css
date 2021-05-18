@@ -415,8 +415,8 @@ h2{
 .clock{
   width: 100%;
   min-width: 320px;
-  background: rgb(183,182,198);
-  background: linear-gradient(90deg, rgba(183,182,198,1) 0%, rgba(119,150,146,1) 10%, rgba(71,189,213,1) 100%);  
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   text-align: center;
   height: 60px;
   font-size: 1.2rem;
@@ -469,4 +469,26 @@ h2{
 }
 #clock{
   font-weight: bold;
+}
+
+/* Andrea */
+
+.about{
+  text-align: center;
+  color: blue;
+}
+
+.about div{
+  /* background-color: blueviolet;
+  width: 70px;
+  text-align: center;
+  height: 10px; */
+}
+
+.about div p{
+  /* color: black;
+  /* font-size: 1rem = 10px; */
+  /* font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px; */ */
 }
