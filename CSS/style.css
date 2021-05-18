@@ -318,6 +318,9 @@ h2{
   max-height: 400px;
 }
 
+.recommended1-img{
+  align-self: center;
+}
 
 .recommended1-img img{
   width: 90%;
@@ -405,4 +408,65 @@ h2{
 
 .green p{
   display: inline-block;
+}
+
+/* COUNTDOWN */
+
+.clock{
+  width: 100%;
+  min-width: 320px;
+  background: rgb(183,182,198);
+  background: linear-gradient(90deg, rgba(183,182,198,1) 0%, rgba(119,150,146,1) 10%, rgba(71,189,213,1) 100%);  
+  text-align: center;
+  height: 60px;
+  font-size: 1.2rem;
+  -webkit-animation: clock 5s ease infinite;
+  -moz-animation: clock 5s ease infinite;
+}
+
+
+@-webkit-keyframes clock {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes clock {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes clock {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 0% -50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#clock{
+  font-weight: bold;
 }
