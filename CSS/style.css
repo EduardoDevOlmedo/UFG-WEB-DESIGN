@@ -1,7 +1,7 @@
 
 
 /* Sergio */
-/* Diseños animacioón */
+/* Diseños animación */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -15,16 +15,15 @@ html{
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: rgb(5, 5, 27);
-  box-shadow: inset 0 0 5px grey;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
   border-radius: 10px;
 }
 
 body{
   font-family: 'Quicksand', sans-serif;
-  background: #f8f8f8;
-  color: #222222;
-  
+  background: #f5f7f8;
+  color: rgb(0, 0, 0);
 }
 
 label{
@@ -38,7 +37,7 @@ label{
 }
 
 label span{
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-radius:10px;
   height:7px;
   margin: 7px 0; 
@@ -70,7 +69,7 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked ~ span:nth-of-type(1){
   transform-origin:bottom;
   transform:rotatez(45deg) translate(8px,0px);
-  background-color: rgb(141, 92, 92);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -78,7 +77,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
   
   transform-origin:top;
   transform:rotatez(-45deg);
-  background-color: rgb(141, 92, 92);
+  background-color: rgb(255, 255, 255);
   
 }
 
@@ -87,7 +86,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
     width: 49%;
     transform: translate(28px,-15px) rotatez(45deg);
-    background-color: rgb(141, 92, 92);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -100,7 +99,7 @@ a{
 
 ul{
   font-size: 1rem;
-  color: rgb(68, 44, 15);
+  color: rgb(255, 255, 255);
   padding: 0;
 }
 
@@ -124,7 +123,7 @@ ul{
   top: 20%;    
   left: 10px;    
   z-index: 50;
-  background-color: rgb(235, 227, 227);
+  background-color: rgb(87, 84, 84);
   min-width: 50px;
   max-width: 320px;
   padding: 10px;
@@ -135,7 +134,7 @@ ul{
 
 
 #menu:hover{
-  background-color: rgb(210, 213, 218);
+  background-color: rgb(173, 173, 173);
   transition: 0.2s ease-in-out;
   box-shadow: 1px 1px 1px 1px 1px rgba(8, 56, 128);
 }
@@ -156,7 +155,7 @@ ul{
 }
 
 .a_link-menu{ 
-  color: rgb(98, 109, 109);
+  color: rgb(255, 255, 255);
 }
 
 
@@ -192,6 +191,7 @@ header{
 .nav-container{
   display: flex;
   width: 100%;
+  
 }
 
 .logo_icon1{
@@ -202,7 +202,7 @@ header{
 .section1-nav{
   display: flex;
   align-items: center;
-  width: 50%; background-color: rgb(207, 203, 211);
+  width: 50%; background-color: #1F1D1E;
 }
 
 .section2-nav{
@@ -211,25 +211,25 @@ header{
   align-items: center;
   width: 50%;
   height: auto;
-  background-color: rgb(207, 203, 211);
+  background-color: #1F1D1E;
 }
 
 .flag{
   display: inline-block;
-  background-image: url('../iconos/bandera.svg');
-  width: 45px;
+  background-image: url('../iconos/ubicacion.svg');
+  width: 51px;
   height: 51px;
   background-position: center;
   background-size: cover;
-  padding: 26px;
-  border-left: 2px solid black;
+  padding: 1px;
+  border-left: 2px solid rgba(255, 255, 255, 0);
 }
 
 .logo-main{
   display: inline-block;
-  background-image: url('../Imagenes/logotipo.svg');
-  width: 71px;
-  height: 53px;
+  background-image: url('../Imagenes/logo oscuro8.svg');
+  width: 145px;
+  height: 51px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,9 +244,9 @@ header{
 nav{
   width: 100%;
   height: 46px;
-  background-color: rgb(236, 236, 245);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
   min-width: 320px;
   height: 46px;
 }
@@ -256,7 +256,7 @@ nav ul{
 }
 
 nav ul li{
- border-left: 1px solid black;
+ border-left: 1px solid rgb(0, 0, 0);
 }
 
 nav .icon{
@@ -313,7 +313,7 @@ h1{
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lucida Bright', ;
   color: black;
   cursor: pointer;
 }
@@ -338,7 +338,7 @@ h2{
 }
 
 .recommended1{
-  background: rgb(161, 158, 158);
+  background: rgb(223, 218, 218);
   border-radius: 10%;
   padding: 10px;
   position: relative;
