@@ -24,6 +24,7 @@ body{
   font-family: 'Quicksand', sans-serif;
   background: #f8f8f8;
   color: #222222;
+  
 }
 
 label{
@@ -105,7 +106,6 @@ ul{
 
  li{
   display: block;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   list-style: none;
   margin: 10px 0 10px;   
   font-family: 1.2rem;
@@ -114,17 +114,25 @@ ul{
   align-self: center;
 }
 
+#menu li a:hover{
+  color: rgb(27, 27, 27);
+  transition: 0.4s ease-in-out 0.1s;
+}
 
 #menu{
   position: absolute;    
-  top: 80px;    
+  top: 20%;    
   left: 10px;    
   z-index: 50;
-  background-color: rgb(190, 183, 183);
+  background-color: rgb(235, 227, 227);
   min-width: 50px;
   max-width: 320px;
   padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #131111;
 }
+
 
 #menu:hover{
   background-color: rgb(210, 213, 218);
@@ -143,7 +151,8 @@ ul{
     height: 60px;
     justify-content: space-evenly;
     display: flex;   
-    border-radius: 20px; 
+    border-radius: 5px; 
+    border: 1px solid black;
 }
 
 .a_link-menu{ 
@@ -228,6 +237,10 @@ header{
   margin-right: 20px;
 }
 
+.icon:hover{
+  padding: 10px;
+}
+
 nav{
   width: 100%;
   height: 46px;
@@ -284,8 +297,14 @@ nav .icon{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
   padding: 10px; 
-  margin-bottom: 30px;
-}
+  margin-top: 20px;
+  margin-bottom: 45px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ffffff, #e6e6e6);
+  box-shadow:  1px -1px 2px #bdbdbd,
+             -6px 6px 12px #ffffff;
+  }
+
 
 h1{
   width: fit-content;
@@ -296,6 +315,7 @@ h1{
   text-align: center;
   font-family: 'Lobster', cursive;
   color: black;
+  cursor: pointer;
 }
 
 h2{
@@ -363,11 +383,11 @@ h2{
 
 
 
-.red:hover{
-  transform: translateY(100%); 
+.red:focus{
+  transform: translateY(95%); 
   background-color: white;
   color: rgb(7, 6, 7);
-  border-top: none;
+  
 }
 
 
@@ -380,6 +400,9 @@ h2{
   height: 40px;
   border: 2.5px solid black;
   top: 90%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  
 }
 
 .red {
@@ -542,6 +565,9 @@ h2{
   .content-text{
     font-size: 1.5rem;
   }
+  .red:hover{
+    border-top: none;
+  }
 }
 
 @media only screen and (min-width:920px) {
@@ -563,6 +589,9 @@ h2{
  }
  .box-desc{
   width:100%;
+}
+.recommended{
+  margin-bottom: 30px;
 }
 }
 
