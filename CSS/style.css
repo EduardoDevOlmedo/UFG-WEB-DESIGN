@@ -24,8 +24,7 @@ html{
 body{
   font-family: 'Quicksand', sans-serif;
   background: #f5f7f8;
-  color: rgb(0, 0, 0);
-  margin-bottom: 70px;
+  color: rgb(0, 0, 0);  
 }
 
 label{
@@ -121,7 +120,7 @@ ul{
 
 #menu{
   position: absolute;    
-  top: 20%;    
+  top: 125px;    
   left: 10px;    
   z-index: 50;
   background-color: rgb(87, 84, 84);
@@ -217,7 +216,7 @@ header{
 
 .flag{
   display: inline-block;
-  background-image: url(../iconos/ubicacion.svg);
+  background-image: url('../iconos/ubicacion.svg');
   width: 34px;
   height: 34px;
   background-position: center;
@@ -235,7 +234,7 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 10px;
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .icon:hover{
@@ -413,11 +412,12 @@ h2{
 }
 
 .red {
-  background-color: rgb(7, 6, 7);
+  background: rgb(31 29 30);
   z-index: 1;
   background: rgb(19 17 17);
   transition: transform 1s cubic-bezier(0.45, 0.59, 0.1, 0.96);
   left: calc(50% - 40px);
+  cursor:help;
 }
 
 .green {
@@ -564,6 +564,14 @@ h2{
   padding: 2px;
 }
 
+
+@media only screen and (min-width:320px){
+  h1{
+    font-size: 1.6rem;
+  }
+}
+
+
 @media only screen and (min-width:340px){
   .cart, .value{
     margin-left: 20px;
@@ -577,7 +585,7 @@ h2{
   .content-text{
     font-size: 1.5rem;
   }
-  .red:hover{
+  .red:focus{
     border-top: none;
   }
 }
@@ -622,11 +630,10 @@ h2{
 /* Foooter */
 
 footer{
-  background-color: #f1e0e0;
-  position: absolute;
-  bottom: -30px;
+  background-color: #f1f1f1;
   width: 100%;
   height: 70px;
+  bottom: 0;
   color: white;
   display: flex;
   align-items: center;
@@ -664,7 +671,8 @@ footer{
   justify-content: center;
   color: #fff;
   font-size: 30px !important;
-  transition: 0.5s;
+  transition: 0.5s 0.1s;
+  border: 1px solid black;
 }
 
 .footer-icons li:hover span:nth-child(5)
@@ -709,3 +717,6 @@ footer{
 .footer-icons li span:nth-child(3){
   background-color: #3E517A;
 }
+
+
+
