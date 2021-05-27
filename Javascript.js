@@ -20,3 +20,5 @@ function hipotenusa(num1, num2){
 }
 
 hipotenusa(4, 5)
+
+

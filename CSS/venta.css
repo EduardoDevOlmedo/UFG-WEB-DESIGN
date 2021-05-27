@@ -1,49 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
-/*
-1.Posicionamiento.
-2.Modelo de caja.
-3.Tipografía
-4.Visuales
-5.Otros
-*/
-
-:root {
-  --font-sans: "DM Sans", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --size-300: 300;
-  --size-400: 400;
-  --size-500: 500;
-  --size-700: 700;
-  --line-height-inter-small: 18px;
-  --line-height-inter-normal: 23px;
-  --line-height-inter-large: 26px;
-  --line-height-inter-small: 15px;
-  --line-height-inter-normal: 19px;
-  --background: #e5e5e5;
-  --linear-gradient: 207.8deg, #201e1c 16.69%, #f7931a 100%;
-  --bitcoin-orage: #f7931a;
-  --soft-orange: #ffe9d5;
-  --secondary-blue: #ffe9d5;
-  --soft-blue: #e7f5ff;
-  --warm-black: #201e1c;
-  --warm-blackplus1: #282623;
-  --gray: #bababa;
-  --off-white: #faf8f7;
-  --just-white: #ffffff;
-}
 
 * {
   box-sizing: border-box;
@@ -57,7 +11,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+ font-family: 'Quicksand', sans-serif;;
 }
 
 
@@ -68,18 +22,48 @@ body {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   margin-top: 20px;
-  height: 150px;
+  height: auto;
   margin: 0 auto;
+  padding: 10px;
+  background-color: royalblue;
+  margin-top: 20px;
+  min-width: 320px;
+  margin-bottom: 5px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .sale-cont section {
   width: 70%;
   min-width: 235px;
-  max-width: 500px;
-  height: 290px;
+  max-width: 500px;  
   margin: 0 auto;
   background-color: papayawhip;
   scroll-snap-align: center;
+}
+
+.sale-cont  p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.image-cards {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 2px;
+}
+
+.buy{
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(196, 185, 185);
+  margin-bottom: 20px;
+  padding: 8px;
 }
 
 
@@ -87,6 +71,5 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
 
 
