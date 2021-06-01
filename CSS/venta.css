@@ -1,3 +1,11 @@
+:root { 
+    --color-fondo-principal: #ffd25e;
+    --color-primer-cuadro: #788DD9;
+    --color-segundo-cuadro: #FF8A7E;
+    --color-tercer-cuadro: #79FA85;
+    --color-secundario-oscuro: #100b0b;
+    --color-fondo-principal-smartphone: #FFEBB8;
+}
 
 * {
   box-sizing: border-box;
@@ -25,11 +33,28 @@ body {
   height: auto;
   margin: 0 auto;
   padding: 10px;
-  background-color: royalblue;
+  background-color: var(--color-fondo-principal);
   margin-top: 20px;
   min-width: 320px;
   margin-bottom: 5px;
   margin: 10px;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count:cubic-bezier(0.24, 0.79, 0.58, 1) ;
+  -webkit-animation-direction: right;
+  -webkit-animation-timing-function: cubic-bezier(0.24, 0.79, 0.58, 1);
+}
+
+
+
+@-webkit-keyframes move {
+  0% {
+    margin-left: -400px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+  
 }
 
 a {
@@ -44,15 +69,26 @@ a {
   margin: 0 auto;
   background-color: papayawhip;
   scroll-snap-align: center;
+  border-radius: 10px;
+  display: grid;
+    height: 100%;
+    place-content: center;
+    align-items: center;
 }
 
 .sale-cont  p {
   text-align: justify;
   padding: 10px;
+  color: black;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 10px;
 }
 
 .image-cards {
-  width: 100%;
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
   border-radius: 10px;
   padding-bottom: 2px;
 }
@@ -61,15 +97,30 @@ a {
   width: 100px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(196, 185, 185);
-  margin-bottom: 20px;
+  background-color: rgb(27, 26, 26);
+  margin-bottom: 5px;
   padding: 8px;
 }
 
+.buy h5 {
+  color: white;
+  font-weight: bold;
+}
 
+h2 {
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  padding: 5px; 
+  justify-content: center;
+}
 
 ::-webkit-scrollbar {
   display: none;
 }
+
 
 
