@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  min-height: 100%;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  background: #f5f7f8;
+  color: rgb(0, 0, 0);  
+}
