@@ -105,7 +105,7 @@ input:focus {
   padding: 10px;
   color: white;
   font-size: 1.6rem;
-  border: 1px solid black;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.4s cubic-bezier(0.89, 0.01, 0.76, 1.35);
   background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);

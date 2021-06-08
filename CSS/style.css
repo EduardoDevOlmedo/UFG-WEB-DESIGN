@@ -416,28 +416,18 @@ h2{
   z-index: 1;
   background: rgb(19 17 17);
   transition: transform 1s cubic-bezier(0.45, 0.59, 0.1, 0.96);
-  left: calc(50% - 40px);
+  left: calc(50% - 50px);
   cursor:help;
 }
 
 .green {
-  left: calc(50% - 40px);
+  left: calc(50% - 50px);
   background: rgb(187 164 164);
   color: black;
   font-weight: 500;
 }
 
 
-.japan{
-  display: inline-block;
-  background-image: url('../iconos/oriental.svg');
-  width: 37px;
-  height: 36px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
 
 .go-action{
   display: inline-block;
@@ -719,5 +709,34 @@ footer{
   background-color: #3E517A;
 }
 
+.containerbody {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  gap: 2rem;
+}
 
+.containerbody__link {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
 
+.containerbody__link:hover {
+  opacity: 0.5;
+  transition: .1s linear;
+}
+
+.containerbody div {
+  text-align: center;
+}
+
+.containerbody div img {
+  width: 300px;
+  width: 100px;
+  margin: 0 auto;
+}
