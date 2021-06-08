@@ -43,6 +43,7 @@
   <link rel="icon" href="../Imagenes/logotipo.svg">
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/all.css">
+  <link rel="stylesheet" href="../CSS/_paga.css">
   <script src="../Javascript.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
@@ -78,5 +79,46 @@
       <li><a href=""><span class="icon forkpoon"></span></a></li>
     </ul>
   </nav>
+  <h1 id= "title">Realiza tu compra.</h1>
+  <section class="main">
+    <section class="main__forms-one">
+        <form action="" class="firstform__entrance">
+            <div class="firstform__entry">Fecha de entrada</div>
+            <input type="date" name="fecha_entrada" id="entrada">
+            <div class="firstform__out">Fecha de salida</div>
+            <input type="date" name="fecha_salida" id="">
+        </form>
+        <div class="container__form">
+        <input type="number" name="numero" placeholder="Hospedantes">
+      </div>
+      <div class="main__names"></div>
+      <div class="main__direction"></div>
+    </section>
+    <section class="forms-two">
+      <input type="text" placeholder="Dirección">
+      <input type="tel" placeholder="Núm. de teléfono"><br>
+      <input type="text" placeholder="Tarjeta de crédito">
+      <input type="number" placeholder="Card Secret PIN"><br>
+      <div class="num">
+        Indique la cantidad de noches de hospedaje. <br>
+        <input type="range"><br>
+        <div class="num__cont">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+        </div>
+      </div>
+    </section>
+    <section class="place">
+      <div class="place__img"><img src="../Imagenes/Bali.jpg" alt=""></div>
+      <div class="place__desc">
+        <p>
+          3 Baños 2 Cocinas Una amplia vista hacia las montañas. Servicio a el cuarto disponible. No se incluye desayuno.
+        </p>
+      </div>
+    </section>
+  </section>
 </body>
 </html>
