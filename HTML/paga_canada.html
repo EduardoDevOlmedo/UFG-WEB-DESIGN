@@ -43,18 +43,13 @@
   <link rel="icon" href="../Imagenes/logotipo.svg">
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/all.css">
+  <link rel="stylesheet" href="../CSS/_paga.css">
   <script src="../Javascript.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 <!-- Free Code Source: Remember to credit the developers: Eduardo, Andrea, Sergio and Diana -->
 </head>
 <body>
-  <div class="clock">
-    <h3>Las ofertas terminan en:</h3>
-    <div id="clock">
-      <script src="../countdown.js"></script>
-    </div>
-  </div>
   <header>
     <!-- LOGO HAMBURGUESA -->
     <div class="section1-nav">
@@ -72,7 +67,7 @@
       </div>
     </div>
     <div class="section2-nav">
-      <figure class="logo-main"></figure>
+      <a href="index.html" class="logo-main"></a>
     </div>
   </header>
   <nav>
@@ -84,117 +79,58 @@
       <li><a href="paga_zacatecoluca.html"><span class="icon forkpoon"></span></a></li>
     </ul>
   </nav>
-  <div>
-    <div class="main-title">
-      <a href="venta.html" target="_blank">
-        <h1>Vive una experiencia inolvidable.<span class="go-action"></span></h1>
-      </a>
-    </div>
-  </div>
-  <div class="recommended">
-    <div class="container-recommend1">
-      <div class="recommended1-img"><img src="../Imagenes/tokio.jpg" alt="paisaje-tokio" title="Tokio" width="70%" height="70%"></div>
-    </div>
-    <h2>
-      Hokkaido, Japón <span class="japan"></span>
-    </h2>
-    <div class="box-desc">
-      <span class="cart"></span>
-      <p class="content-text">
-        Casa entera.
-        Apartamento en zona cálida y tranquila
-      <div style="margin-bottom: 28px; justify-self: flex-start;">
-        <button class="red">Ver precio</button>
-        <span class="green">
-          <p>$60</p> <a href="./paga_japon.html" target="_blank"><span class="go-action"></span></a>
-        </span>
-        <div class="stars">
-          <span class="value"></span>
-          <p>4,3 (20)</p>
-        </div>
-        </p>
+  <h1 id= "title">Realiza tu compra.</h1>
+  <section class="main">
+    <section class="main__forms-one">
+        <form action="" class="firstform__entrance">
+            <div class="firstform__entry">Fecha de entrada</div>
+            <input type="date" name="fecha_entrada" id="entrada">
+            <div class="firstform__out">Fecha de salida</div>
+            <input type="date" name="fecha_salida" id="">
+        </form>
+        <div class="container__form">
+        <input type="number" name="numero" placeholder="Hospedantes">
       </div>
-    </div>
-  </div>
-  <div class="recommended">
-    <div class="container-recommend1">
-      <div class="recommended1-img"><img src="../Imagenes/Toronto.jpg" alt="paisaje-tokio" title="Tokio" width="70%" height="70%"></div>
-    </div>
-    <h2>
-      Toronto, Canada<span class="japan canada"></span>
-    </h2>
-    <div class="box-desc">
-      <span class="cart"></span>
-      <p class="content-text">
-        Vistas increíbles, vive la experiencia de Canada.
-      <div style="margin-bottom: 28px; justify-self: flex-start;">
-        <button class="red">Ver precio</button>
-        <span class="green">
-          <p>$120</p> <a href="./paga_canada.html" target="_blank"><span class="go-action"></span></a>
-        </span>
-        <div class="stars">
-          <span class="value"></span>
-          <p>4,8 (32)</p>
+      <div class="main__names"></div>
+      <div class="main__direction"></div>
+    </section>
+    <section class="forms-two">
+      <input type="text" placeholder="Dirección">
+      <input type="tel" placeholder="Núm. de teléfono"><br>
+      <input type="text" placeholder="Tarjeta de crédito">
+      <input type="number" placeholder="Card Secret PIN"><br>
+      <div class="num">
+        Indique la cantidad de noches de hospedaje. <br>
+        <input type="range"><br>
+        <div class="num__cont">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
         </div>
-        </p>
       </div>
-    </div>
-  </div>
-  <div class="recommended">
-    <div class="container-recommend1" id="recommendxd">
-      <div class="recommended1-img"><img src="../Imagenes/París Francia.jpg" alt="paisaje-tokio" title="Tokio"></div>
-    </div>
-    <h2>
-      París, Francia <span class="japan"></span>
-    </h2>
-    <div class="box-desc">
-      <span class="cart"></span>
-      <p class="content-text">
-        Perfecto para conmemorar el amor de pareja.
-      <div style="margin-bottom: 28px; justify-self: flex-start;">
-        <button class="red">Ver precio</button>
-        <span class="green">
-          <p>$90</p> <a href="./paga_paris.html" target="_blank"><span class="go-action"></span></a>
-        </span>
-        <div class="stars">
-          <span class="value"></span>
-          <p>4,2 (10)</p>
+    </section>
+    <section class="place">
+      <div class="place__img"><img src="../Imagenes/hotelcanada.jpg" alt=""></div>
+      <div class="place__desc">
+        <p>
+          2 baños.
+          3 habitaciones.
+          1 sala.
+          1 comedor.
+          1 cocina.
+          1 piscina.
+        </p>
+        <div class="place__wallet">
+          <div class="place__paypal"></div>
+          <div class="place__visa"></div>
         </div>
-        </p>
+        <div class="place__pay">
+            <a href="./agradecimiento.html">Comprar</a>
+        </div>
       </div>
-    </div>
-  </div>
-  <footer>
-    <ul class="footer-icons">
-      <li>
-        <a href="">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fab fa-github-square"></span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fab fa-instagram-square"></span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fab fa-facebook-square"></span>
-        </a>
-      </li>
-    </ul>   
-  </footer>
+    </section>
+  </section>
 </body>
 </html>
-
