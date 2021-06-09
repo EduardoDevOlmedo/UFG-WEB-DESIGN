@@ -160,7 +160,7 @@ input {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    input {
+    a {
       text-align: center;
       color: black;
       cursor: pointer;
@@ -172,7 +172,7 @@ input {
   &__pay:hover {
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 20px;
-    input:hover {
+    a:hover {
       text-transform: uppercase;
     }
   }
