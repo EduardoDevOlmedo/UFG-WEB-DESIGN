@@ -158,16 +158,21 @@ input {
     padding: 10px;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    a {
+    input {
+      text-align: center;
       color: black;
+      cursor: pointer;
       font-weight: bold;
+      border: none;
+      background-color: white;
     }
   }
   &__pay:hover {
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 20px;
-    a:hover {
+    input:hover {
       text-transform: uppercase;
     }
   }
